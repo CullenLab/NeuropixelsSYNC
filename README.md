@@ -10,7 +10,7 @@ An Arduino [**Teensy 4.0 (PJRC.com)**](https://www.pjrc.com/store/teensy40.html)
 * Trigger pulses from your experiment are fed into the Trigger input.
 * Trigger outputs will be phase-locked to the Neuropixels 30KHz data samples (within the resolution of the Teensy 150MHz timers), such that there will be a delay of near 0uSec up to about 33uSec for each trigger, depending on the timing relationship between the trigger input and the Neuropixels sample clock. The trigger output signal should be connected to the  stimulation device trigger input, to generate the actual stimulation pulses.
 
-Modifying the headstage to should be attempted only by persons experienced with surface mount soldering and rework techniques, since there is potential for damage or destruction of the headstage. The MIT license for this repository applies also to this modification. Proceed at your own risk. In no event shall the authors or copyright holders of this repository be liable for any claim, damages or other liability.
+Modifying the headstage to should be attempted only by persons experienced with surface mount soldering and rework techniques, since there is potential for damage or destruction of the headstage. The MIT license for this repository applies also to this modification. Proceed at your own risk. In no event shall the authors or copyright holders of this repository be liable for any claim, damages or other liability regarding this modification.
 
 |11.7MHz clock signal is present on copper test pad (circled RED). A convenient ground connection is available on one end of a capacitor (circled GREEN)| The coax center conductor is soldered to the 11.7MHz test pad, and a ground wire is connected from the coax shield to the capacitor.|
 | :--- | :--- |
