@@ -4,7 +4,7 @@ An Arduino [**Teensy 4.0 (PJRC.com)**](https://www.pjrc.com/store/teensy40.html)
 
 ![SYNC circuit diagram](circuit/SYNC_circuit.png)
 
-* The 11.7MHz clock from the Neuropixels 1.0 headstage should be connected with a thin coaxial cable. The cable length should be kept as short as possible, preferably no more than about 15cm long, to preserve the signal integrity.
+* The 11.7MHz clock from the Neuropixels 1.0 headstage should be connected with a thin coaxial cable. The cable length should be kept as short as possible, preferably no more than about 40cm long or so, to preserve the signal integrity.
 * The 74HTC00 chip is used to buffer the low-voltage headstage clock, which is only a few hundred mV peak-to-peak, and produce a clean 3.3V square wave required for the Teensy digital input. Note that the particular choice of the 74HCT00 is not critical. Any digital buffer chip that can accept the lower voltage clock and produce a clean 3.3V digital output should be acceptable.
 * The Teensy's internal timer is clocked at 150MHz, allowing ~6.67nSec timing resolution.
 * Trigger pulses from your experiment are fed into the Trigger input.
