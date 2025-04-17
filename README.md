@@ -9,3 +9,11 @@ An Arduino [**Teensy 4.0 (PJRC.com)**](https://www.pjrc.com/store/teensy40.html)
 * The Teensy's internal timer is clocked at 150MHz, allowing ~6.67nSec timing resolution.
 * Trigger pulses from your experiment are fed into the Trigger input.
 * Trigger outputs will be phase-locked to the Neuropixels 30KHz data samples (within the resolution of the Teensy 150MHz timers), such that there will be a delay of near 0uSec up to about 33uSec for each trigger, depending on the timing relationship between the trigger input and the Neuropixels sample clock. The trigger output signal should be connected to your experiments stimulation device trigger input, to generate the actual stimulation pulses.
+
+Modifying the headstage to should be attempted only by persons experienced with surface mount soldering and rework techniques, since there is potential for damage or destruction of the headstage. The MIT license for this repository applies also to this modification. Proceed at your own risk. In no event shall the authors or copyright holders of this repository be liable for any claim, damages or other liability.
+
+|11.7MHz clock signal is present on copper test pad (circled RED). A convenient ground connection is available on one end of a capacitor (circled GREEN)| The coax center conductor is soldered to the 11.7MHz test pad, and a ground wire is connected from the coax shield to the capacitor.|
+| :--- | :--- |
+|![NP 1.0 Headstage](images/NP_Headstage.jpg)|![Modified Headstage](images/NP_Headstage_soldered.jpg)|
+
+* It is important to provide mechanical strain relief of the coaxial cable. The photo shows the white and yellow "tie downs" which are threaded through the mounting hole at the corner of the headstage board. Without this mechanical restraint, any mechanical stress on the cable may tear the pad off the headstage circuit board, causing permanent damage.
