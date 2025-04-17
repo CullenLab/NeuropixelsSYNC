@@ -51,9 +51,9 @@ plot(squeeze(seg(:,:,1)'))
 [tempAll,dataArrayD]=deArtifactAll(dataArray,seg,ind,params);
 
 %% Write bin file output (with D added to the end of file name)
-WriteBin(dataArrayD,[binName(1:end-13) 'D' num2str(kk) '.imec0.ap.bin'],'.')
+WriteBin(dataArrayD,[binName(1:end-13) 'D.imec0.ap.bin'],'.')
 
 %% Save mat file 
 data=out;
 trig=dataArray(385,:);
-save([binName(1:end-15) num2str(kk) '.mat'], 'data','trig','params','tempAll')
+save([binName(1:end-15) '.mat'], 'data','trig','params','tempAll')
