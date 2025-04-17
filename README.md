@@ -12,7 +12,7 @@ An Arduino [**Teensy 4.0 (PJRC.com)**](https://www.pjrc.com/store/teensy40.html)
 
 Modifying the headstage to should be attempted only by persons experienced with surface mount soldering and rework techniques, since there is potential for damage or destruction of the headstage. The MIT license for this repository applies also to this modification. Proceed at your own risk. In no event shall the authors or copyright holders of this repository be liable for any claim, damages or other liability regarding this modification.
 
-|11.7MHz clock signal is present on copper test pad (circled RED). A convenient ground connection is available on one end of a capacitor (circled GREEN)| The coax center conductor is soldered to the 11.7MHz test pad, and a ground wire is connected from the coax shield to the capacitor.|
+|11.7MHz clock signal is present on copper test pad (circled RED). A convenient ground connection is available on one end of a capacitor (circled GREEN)| The coax center conductor is soldered to the 11.7MHz test pad, and a ground wire is connected from the coax shield to the capacitor (the orange grounding wire is not related to this modification, and is not required).|
 | :--- | :--- |
 |![NP 1.0 Headstage](images/NP_Headstage.jpg)|![Modified Headstage](images/NP_Headstage_soldered.jpg)|
 
