@@ -8,7 +8,7 @@ tempAll=zeros(size(dataArray,1),size(seg,2));
 ll=params.ll; %how long to subtract the template for
 off=params.off; %offset accounting for the "pre" period in the template
 st=params.st; %difference from actual stim time and rising edge of trigger (This is typically 0.) 
-% ss=params.ss; %Further offset
+ss=params.ss; %Further offset
 
 for k=0:383 %for each channel
 
