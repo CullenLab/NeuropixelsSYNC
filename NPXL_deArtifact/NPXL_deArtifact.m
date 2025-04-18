@@ -25,7 +25,7 @@ meta = SGLX_readMeta.ReadMeta(binName, path);
 % Specify time point to load
 
 bt=0; %Sample number to start from
-et=15; %How many seconds of data to load (30 kHz sampling rate)
+et=inf; %How many seconds of data to load (30 kHz sampling rate)
 
 % Get data
 dataArray = SGLX_readMeta.ReadBin(30000*bt,30000*(et-bt), meta, binName, path);
@@ -56,4 +56,4 @@ WriteBin(dataArrayD,[binName(1:end-13) 'D.imec0.ap.bin'],'.')
 %% Save mat file 
 data=out;
 trig=dataArray(385,:);
-save([binName(1:end-15) '.mat'], 'data','trig','params','tempAll')
+save([binName(1:end-13) '.mat'], 'data','trig','params','tempAll')
