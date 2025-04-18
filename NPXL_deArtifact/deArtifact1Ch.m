@@ -26,6 +26,7 @@ temp=mean(p)-mean(mean(p)); %Artifact template
 figure(78)
 plot(temp')
 title('Artifact template')
+xlabel('Sample number')
 
 s=dataArray(k+1,:); %deArtifact'ed trace
 sp=s; %Raw trace
@@ -49,6 +50,7 @@ plot(s)
 plot(dataArray(end,:))
 hold off
 legend('Raw','After artifact removal','Triggers')
+title('Comparison between before and after artifact removal')
 
 % Grab segments after filter
     out=grabSegments1Ch(sf,ind,params.pre,params.post);
