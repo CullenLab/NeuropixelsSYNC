@@ -44,10 +44,10 @@ sf=filtfilt(b,a,s);
 
 % Plot the voltage traces before and after artifact removal
 figure(45)
-plot(sp)
+plot(sp, 'linewidth', 0.75)
 hold on
-plot(s)
-plot(dataArray(end,:))
+plot(s, 'linewidth', 0.75)
+plot(dataArray(end,:), 'linewidth', 0.75)
 hold off
 legend('Raw','After artifact removal','Triggers')
 title('Comparison between before and after artifact removal')
