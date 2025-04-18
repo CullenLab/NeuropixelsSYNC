@@ -15,12 +15,12 @@ params.pre=1; % How many milliseconds to visualize (and make template for) befor
 params.post=5; % How many milliseconds to visualize (and make template for) after the start of each pulse
 params.trigTresh=10; %Threshold for triggers 
 
-params.ll=30; %how long to subtract the template for
+params.ll=30; %how long (in samples) to subtract the template for
 params.off=params.pre*30+1; %offset accounting for the "pre" period in the template
 params.st=0; %difference from actual stim time and rising edge of trigger (This is typically 0.) 
 params.ss=0; %Further offset
 
-params.k=339; % Channel to visualize
+params.k=75; % Channel to visualize
 
 % Specity file name and location 
 %  Adapted partly from SpikeGLX_Datafile_Tools by Jennifer Colonell
@@ -42,6 +42,8 @@ dataArray = SGLX_readMeta.ReadBin(30000*bt,30000*(et-bt), meta, binName, path);
 % Plot trigger channel
 figure(12)
 plot(dataArray(385,:))
+title('Triggers')
+xlabel('Sample number')
 
 % Grab segments
 
@@ -52,6 +54,8 @@ seg=grabSegments(dataArray,ind,params.pre,params.post);
 % Plot the data aligned to each stimulation pulse
 figure(5)
 plot(squeeze(seg(:,:,1)'))
+title('Raw traces aligned to start of stimulation')
+xlabel('Sample number')
 
 % One channel
 [temp,out,outf]=deArtifact1Ch(dataArray,seg,ind,params);
