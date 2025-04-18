@@ -1,3 +1,11 @@
+%
+% Copyright (c) 2025, CullenLab, Johns Hopkins University
+% All rights reserved.
+% Created by Pum Wiboonsaksakul
+%
+% This source code is licensed under the MIT-style license found in the
+% LICENSE file in the root directory of this source tree. 
+
 %% De-artifact for ONE example channel
 function [tempAll,dataArrayD]=deArtifactAll(dataArray,seg,ind,params)
 
