@@ -1,6 +1,6 @@
 This is a project from the [**Cullen Lab at Johns Hopkins University**](https://www.bme.jhu.edu/people/faculty/kathleen-cullen/) for achieving sub-microsecond hardware synchronization of stimulation pulses with data from a [**Neuropixels™**](https://www.neuropixels.org/) 1.0 probe. Under good conditions (where stimulation pulses do not saturate/overload the Neuropixels recording amplifiers, and stimulation parameters, experimental conditions, and resulting stimulation artifact waveforms remain consistent), this can allow for simple averaging and subtraction of stimulation artifacts, with negligible residuals, leaving clean neural signals which can be further processed with automatic spike detection, spike sorting, etc.
 
-An Arduino [**Teensy 4.0 (PJRC.com)**](https://www.pjrc.com/store/teensy40.html) is used to implement the synchronization scheme.
+An Arduino [**Teensy 4.1 (PJRC.com)**](https://www.pjrc.com/store/teensy41.html) or [**Teensy 4.0 (PJRC.com)**](https://www.pjrc.com/store/teensy40.html) may be used to implement the synchronization scheme (the two boards use the same microcontroller; the 4.1 is larger and has more I/O connections, which are not required for this project). The schematic shown here is for the Teensy 4.1.
 
 ![SYNC circuit diagram](circuit/SYNC_circuit.png)
 
